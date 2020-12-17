@@ -1,0 +1,13 @@
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\FitnessCard\bin\Debug\netcoreapp3.1\FitnessCard.exe
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\FitnessCard\bin\Debug\netcoreapp3.1\FitnessCard.deps.json
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\FitnessCard\bin\Debug\netcoreapp3.1\FitnessCard.runtimeconfig.json
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\FitnessCard\bin\Debug\netcoreapp3.1\FitnessCard.runtimeconfig.dev.json
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\FitnessCard\bin\Debug\netcoreapp3.1\FitnessCard.dll
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\FitnessCard\bin\Debug\netcoreapp3.1\FitnessCard.pdb
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\FitnessCard\obj\Debug\netcoreapp3.1\FitnessCard.csprojAssemblyReference.cache
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\FitnessCard\obj\Debug\netcoreapp3.1\FitnessCard.AssemblyInfoInputs.cache
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\FitnessCard\obj\Debug\netcoreapp3.1\FitnessCard.AssemblyInfo.cs
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\FitnessCard\obj\Debug\netcoreapp3.1\FitnessCard.csproj.CoreCompileInputs.cache
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\FitnessCard\obj\Debug\netcoreapp3.1\FitnessCard.dll
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\FitnessCard\obj\Debug\netcoreapp3.1\FitnessCard.pdb
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\FitnessCard\obj\Debug\netcoreapp3.1\FitnessCard.genruntimeconfig.cache

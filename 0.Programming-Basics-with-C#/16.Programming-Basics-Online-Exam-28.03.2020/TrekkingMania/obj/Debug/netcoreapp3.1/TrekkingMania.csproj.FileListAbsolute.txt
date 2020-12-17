@@ -1,0 +1,13 @@
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\TrekkingMania\bin\Debug\netcoreapp3.1\TrekkingMania.exe
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\TrekkingMania\bin\Debug\netcoreapp3.1\TrekkingMania.deps.json
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\TrekkingMania\bin\Debug\netcoreapp3.1\TrekkingMania.runtimeconfig.json
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\TrekkingMania\bin\Debug\netcoreapp3.1\TrekkingMania.runtimeconfig.dev.json
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\TrekkingMania\bin\Debug\netcoreapp3.1\TrekkingMania.dll
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\TrekkingMania\bin\Debug\netcoreapp3.1\TrekkingMania.pdb
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\TrekkingMania\obj\Debug\netcoreapp3.1\TrekkingMania.csprojAssemblyReference.cache
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\TrekkingMania\obj\Debug\netcoreapp3.1\TrekkingMania.AssemblyInfoInputs.cache
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\TrekkingMania\obj\Debug\netcoreapp3.1\TrekkingMania.AssemblyInfo.cs
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\TrekkingMania\obj\Debug\netcoreapp3.1\TrekkingMania.csproj.CoreCompileInputs.cache
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\TrekkingMania\obj\Debug\netcoreapp3.1\TrekkingMania.dll
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\TrekkingMania\obj\Debug\netcoreapp3.1\TrekkingMania.pdb
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\TrekkingMania\obj\Debug\netcoreapp3.1\TrekkingMania.genruntimeconfig.cache

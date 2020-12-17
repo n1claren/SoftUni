@@ -1,0 +1,13 @@
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\SuitcasesLoad\bin\Debug\netcoreapp3.1\SuitcasesLoad.exe
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\SuitcasesLoad\bin\Debug\netcoreapp3.1\SuitcasesLoad.deps.json
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\SuitcasesLoad\bin\Debug\netcoreapp3.1\SuitcasesLoad.runtimeconfig.json
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\SuitcasesLoad\bin\Debug\netcoreapp3.1\SuitcasesLoad.runtimeconfig.dev.json
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\SuitcasesLoad\bin\Debug\netcoreapp3.1\SuitcasesLoad.dll
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\SuitcasesLoad\bin\Debug\netcoreapp3.1\SuitcasesLoad.pdb
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\SuitcasesLoad\obj\Debug\netcoreapp3.1\SuitcasesLoad.csprojAssemblyReference.cache
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\SuitcasesLoad\obj\Debug\netcoreapp3.1\SuitcasesLoad.AssemblyInfoInputs.cache
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\SuitcasesLoad\obj\Debug\netcoreapp3.1\SuitcasesLoad.AssemblyInfo.cs
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\SuitcasesLoad\obj\Debug\netcoreapp3.1\SuitcasesLoad.csproj.CoreCompileInputs.cache
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\SuitcasesLoad\obj\Debug\netcoreapp3.1\SuitcasesLoad.dll
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\SuitcasesLoad\obj\Debug\netcoreapp3.1\SuitcasesLoad.pdb
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\SuitcasesLoad\obj\Debug\netcoreapp3.1\SuitcasesLoad.genruntimeconfig.cache

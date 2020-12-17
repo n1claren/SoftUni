@@ -1,0 +1,13 @@
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\MountainRun\bin\Debug\netcoreapp3.1\MountainRun.exe
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\MountainRun\bin\Debug\netcoreapp3.1\MountainRun.deps.json
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\MountainRun\bin\Debug\netcoreapp3.1\MountainRun.runtimeconfig.json
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\MountainRun\bin\Debug\netcoreapp3.1\MountainRun.runtimeconfig.dev.json
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\MountainRun\bin\Debug\netcoreapp3.1\MountainRun.dll
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\MountainRun\bin\Debug\netcoreapp3.1\MountainRun.pdb
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\MountainRun\obj\Debug\netcoreapp3.1\MountainRun.csprojAssemblyReference.cache
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\MountainRun\obj\Debug\netcoreapp3.1\MountainRun.AssemblyInfoInputs.cache
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\MountainRun\obj\Debug\netcoreapp3.1\MountainRun.AssemblyInfo.cs
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\MountainRun\obj\Debug\netcoreapp3.1\MountainRun.csproj.CoreCompileInputs.cache
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\MountainRun\obj\Debug\netcoreapp3.1\MountainRun.dll
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\MountainRun\obj\Debug\netcoreapp3.1\MountainRun.pdb
+C:\Users\n1cla\source\repos\ProgrammingBasicsOnlineExam28March2020\MountainRun\obj\Debug\netcoreapp3.1\MountainRun.genruntimeconfig.cache
