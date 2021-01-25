@@ -1,0 +1,10 @@
+reamReader.Read(buffer, 0, buffer.Length);
+
+                            streamWriter.Write(buffer, 0, buffer.Length);
+
+                            count += buffer.Length;
+                        }
+
+                        if (streamReader.Position != streamReader.Length && i == 3)
+                        {
+                            int remainingBytes = (int)streamReader.Le
