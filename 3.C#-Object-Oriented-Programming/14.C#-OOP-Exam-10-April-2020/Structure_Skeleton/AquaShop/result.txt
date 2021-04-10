@@ -1,0 +1,11 @@
+Successfully added SaltwaterAquarium.
+Successfully added Plant.
+Successfully added Plant.
+Successfully added Ornament.
+Successfully added Plant to DangerZone.
+Successfully added Plant to DangerZone.
+Successfully added Ornament to DangerZone.
+Successfully added SaltwaterFish to DangerZone.
+Successfully added SaltwaterFish to DangerZone.
+Fish fed: 2
+Invalid fish type.
