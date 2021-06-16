@@ -16,13 +16,6 @@ function solve() {
             return;
         }
 
-        createLi(name, hall, price);
-        
-        [...document.querySelectorAll('#container  > input')]
-        .map((el) => el.value = '');
-    };
-
-    function createLi(name, hall, price) {
         const li = document.createElement('li');
 
         const span = document.createElement('span');
@@ -77,5 +70,8 @@ function solve() {
                 ev.target.parentNode.querySelector('ul>li').remove();
             });
         }
-    }
+        
+        [...document.querySelectorAll('#container  > input')]
+        .map((el) => el.value = '');
+    };
 }
