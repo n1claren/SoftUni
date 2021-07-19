@@ -6,7 +6,7 @@ async function onSubmit(data) {
     const body = JSON.stringify({
         email: data.email,
         password: data.password,
-    });
+    })
 
     try {
         const response = await fetch('http://localhost:3030/users/register', {
@@ -28,7 +28,6 @@ async function onSubmit(data) {
     }
 }
 
-
 let main;
 let section;
 let setActiveNav;
@@ -44,7 +43,7 @@ export function setupRegister(mainTarget, sectionTarget, setActiveNavCB) {
         ev.preventDefault();
         const formData = new FormData(ev.target);
         onSubmit([...formData.entries()].reduce((p, [k, v]) => Object.assign(p, { [k]: v }), {}));
-    }));
+    }))
 }
 
 export function showRegister() {

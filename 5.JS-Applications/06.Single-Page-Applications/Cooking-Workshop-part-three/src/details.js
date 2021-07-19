@@ -45,7 +45,7 @@ function createRecipeCard(recipe) {
             e('h3', {}, 'Preparation:'),
             recipe.steps.map(s => e('p', {}, s))
         ),
-    );
+    )
 
     const userId = sessionStorage.getItem('userId');
     if (userId != null && recipe._ownerId == userId) {
@@ -59,6 +59,7 @@ function createRecipeCard(recipe) {
 
     function onDelete() {
         const confirmed = confirm(`Are you sure you want to delete ${recipe.name}?`);
+        
         if (confirmed) {
             deleteRecipeById(recipe._id);
         }

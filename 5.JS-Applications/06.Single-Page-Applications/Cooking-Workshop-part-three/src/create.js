@@ -13,7 +13,7 @@ export function setupCreate(targetMain, targetSection, onActiveNav) {
     form.addEventListener('submit', (ev => {
         ev.preventDefault();
         const formData = new FormData(ev.target);
-        onSubmit([...formData.entries()].reduce((p, [k, v]) => Object.assign(p, { [k]: v }), {}));
+        onSubmit(Array.from(formData.entries()).reduce((p, [k, v]) => Object.assign(p, { [k]: v }), {}));
     }))
 
     async function onSubmit(data) {
@@ -54,7 +54,6 @@ export function setupCreate(targetMain, targetSection, onActiveNav) {
 
 export function showCreate() {
     setActiveNav('createLink');
-    
     main.innerHTML = '';
     main.appendChild(section);
 }

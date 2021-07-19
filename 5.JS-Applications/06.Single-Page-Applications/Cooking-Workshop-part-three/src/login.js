@@ -14,7 +14,7 @@ export function setupLogin(targetMain, targetSection, onActiveNav) {
     form.addEventListener('submit', (ev => {
         ev.preventDefault();
         const formData = new FormData(ev.target);
-        onSubmit([...formData.entries()].reduce((p, [k, v]) => Object.assign(p, { [k]: v }), {}));
+        onSubmit(Array.from(formData.entries()).reduce((p, [k, v]) => Object.assign(p, { [k]: v }), {}));
     }))
 
     async function onSubmit(data) {
@@ -30,8 +30,10 @@ export function setupLogin(targetMain, targetSection, onActiveNav) {
                     'Content-Type': 'application/json'
                 },
                 body
-            });
+            })
+
             const data = await response.json();
+
             if (response.status == 200) {
                 sessionStorage.setItem('authToken', data.accessToken);
                 sessionStorage.setItem('userId', data._id);

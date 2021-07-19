@@ -5,7 +5,6 @@ import { setupRegister, showRegister } from './register.js';
 import { setupDetails } from './details.js';
 import { setupEdit } from './edit.js';
 
-
 window.addEventListener('load', async () => {
     setUserNav();
 
@@ -18,9 +17,9 @@ window.addEventListener('load', async () => {
     setupRegister(main, document.getElementById('register'), setActiveNav);
     setupDetails(main, document.getElementById('details'), setActiveNav);
     setupEdit(main, document.getElementById('edit'), setActiveNav);
-    
     document.getElementById('views').remove();
 
+    
     const links = {
         'catalogLink': showCatalog,
         'createLink': showCreate,
@@ -46,9 +45,8 @@ window.addEventListener('load', async () => {
     }
 
     function setActiveNav(targetId) {
-        Array.from(nav.querySelectorAll('a')).forEach(a => a.id == targetId ? a.classList.add('active') : a.classList.remove('active'));
+        [...nav.querySelectorAll('a')].forEach(a => a.id == targetId ? a.classList.add('active') : a.classList.remove('active'));
     }
-
 
     function setUserNav() {
         if (sessionStorage.getItem('authToken') != null) {
@@ -75,4 +73,4 @@ window.addEventListener('load', async () => {
             console.error(await response.json());
         }
     }
-});
+})
