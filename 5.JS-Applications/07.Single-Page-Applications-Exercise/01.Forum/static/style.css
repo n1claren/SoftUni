@@ -1,7 +1,4 @@
-@import url('reset.css');
-@import url('layout.css');
 @import url('typography.css');
-@import url('responsive.css');
 @import url('new-topic.css');
 @import url('topic-content.css');
 
@@ -38,8 +35,6 @@ button {
 button:hover {
     cursor: pointer;
 }
-
-/* header  */
 
 header {
     background: rgb(0, 128, 182);
@@ -103,8 +98,6 @@ nav {
     margin: auto;
 }
 
-/* mini-navbar */
-
 .mini-navbar ul {
     background-color: #6ba1b8;
     border-radius: 5px;
@@ -115,13 +108,9 @@ nav {
     padding-left: .5em;
 }
 
-/* main  */
-
 main {
     width: 75%;
 }
-
-/* topic list item */
 
 .topic-container a {
     text-decoration: none;
@@ -132,7 +121,8 @@ main {
     font-weight: bold;
 }
 
-.topic-container h2, p {
+.topic-container h2,
+p {
     padding: 0.3em 0 0.2em;
     margin: 0;
 }
@@ -188,8 +178,6 @@ time {
     font-weight: bold;
 }
 
-/* aside  */
-
 aside {
     width: 29%;
     margin-top: 1em;
@@ -237,8 +225,6 @@ aside {
     text-decoration: none;
     color: inherit;
 }
-
-/* footer  */
 
 footer {
     background: rgb(0, 212, 255);

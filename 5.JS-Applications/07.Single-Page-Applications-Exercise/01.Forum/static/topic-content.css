@@ -1,14 +1,8 @@
-/* topic content  */
-
 .topic-content {
     display: flex;
     flex-direction: column;
     width: 80%;
 }
-
-/* topic title  */
-
-/* topic title  */
 
 .topic-name-wrapper {
     display: flex;
@@ -72,8 +66,6 @@
 .topic-name h2 {
     padding-top: 0;
 }
-
-/* comment  */
 
 .comment {
     margin-top: 1em;
@@ -165,8 +157,6 @@
 .footer .fas.fa-thumbs-down {
     color: red;
 }
-
-/* answer-comment */
 
 .answer-comment {
     width: 100%;
