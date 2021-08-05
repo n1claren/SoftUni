@@ -1,9 +1,9 @@
 import { html } from '../../node_modules/lit-html/lit-html.js';
 import { getFurniture } from '../api/data.js';
-import { itemTemplate } from '../views/common/item.js';
+import { itemTemplate } from './common/item.js';
 
 const dashboardTemplate = (data) => html`
-<div class="row space-top">
+        <div class="row space-top">
             <div class="col-md-12">
                 <h1>Welcome to Furniture System</h1>
                 <p>Select furniture from the catalog to view details.</p>
@@ -15,6 +15,5 @@ const dashboardTemplate = (data) => html`
 
 export async function dashboardPage(context) {
     const data = await getFurniture();
-
     context.render(dashboardTemplate(data));
 }

@@ -1,9 +1,9 @@
 import { html } from '../../node_modules/lit-html/lit-html.js';
 import { getMyFurniture } from '../api/data.js';
-import { itemTemplate } from '../views/common/item.js';
+import { itemTemplate } from './common/item.js';
 
 const myTemplate = (data) => html`
-<div class="row space-top">
+    <div class="row space-top">
             <div class="col-md-12">
                 <h1>My Furniture</h1>
                 <p>This is a list of your publications.</p>
@@ -11,9 +11,9 @@ const myTemplate = (data) => html`
         </div>
         <div class="row space-top">
             ${data.map(itemTemplate)}
-        </div>`;
+        </div>`
 
-export async function myFurniturePage(context) {
+export async function myPage(context) {
     const data = await getMyFurniture();
     context.render(myTemplate(data));
 }

@@ -1,8 +1,9 @@
 import { html } from '../../node_modules/lit-html/lit-html.js';
-import { deleteFurniture, getItemByID, getMyFurniture } from '../api/data.js';
+import { getById } from '../api/data.js';
+import { deleteRecord } from '../api/data.js';
 
 const detailsTemplate = (item, isOwner, onDelete) => html`
-<div class="row space-top">
+    <div class="row space-top">
             <div class="col-md-12">
                 <h1>Furniture Details</h1>
             </div>
@@ -11,7 +12,7 @@ const detailsTemplate = (item, isOwner, onDelete) => html`
             <div class="col-md-4">
                 <div class="card text-white bg-primary">
                     <div class="card-body">
-                        <img src=${item.img} />
+                        <img src=${item.img.replace('./', '/')} />
                     </div>
                 </div>
             </div>
@@ -22,7 +23,7 @@ const detailsTemplate = (item, isOwner, onDelete) => html`
                 <p>Description: <span>${item.description}</span></p>
                 <p>Price: <span>${item.price}</span></p>
                 <p>Material: <span>${item.material}</span></p>
-                ${isOwner ? html`
+                ${isOwner ? html `
                 <div>
                     <a href=${`/edit/${item._id}`} class="btn btn-info">Edit</a>
                     <a @click=${onDelete} href="javascript:void(0)" class="btn btn-red">Delete</a>
@@ -32,17 +33,17 @@ const detailsTemplate = (item, isOwner, onDelete) => html`
 
 export async function detailsPage(context) {
     const id = context.params.id;
-    const item = await getItemByID(id);
+    const item = await getById(id);
 
-    const userID = sessionStorage.getItem('userId');
+    const userId = sessionStorage.getItem('userId');
 
-    context.render(detailsTemplate(item, item._userId == userID, onDelete));
+    context.render(detailsTemplate(item, item._ownerId == userId, onDelete));
 
     async function onDelete() {
         const confirmation = confirm('Are you sure you want to delete this item?');
 
         if (confirmation) {
-            await deleteFurniture(item._id);
+            await deleteRecord(item._id);
             context.page.redirect('/');
         }
     }
