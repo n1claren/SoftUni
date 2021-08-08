@@ -15,7 +15,7 @@ const detailsTemplate = (book, isOwner, userID, onDelete) => html`
 
                     <!-- Bonus -->
                     <!-- Like button ( Only for logged-in users, which is not creators of the current book ) -->
-                    ${userID != null && isOwner ? '' : html`<a class="button" href="#">Like</a>`}
+                    ${userID == null || isOwner ? '' : html`<a class="button" href="#">Like</a>`}
 
                     <!-- ( for Guests and Users )  -->
                     <div class="likes">
