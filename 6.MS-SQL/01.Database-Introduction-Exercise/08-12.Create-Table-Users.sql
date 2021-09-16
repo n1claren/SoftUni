@@ -9,7 +9,7 @@ CREATE TABLE Users
 )
 
 INSERT INTO Users 
-(Username, [Password], [ProfilePicture], [LastLoginTime], [IsDeleted]) 
+([Username], [Password], [ProfilePicture], [LastLoginTime], [IsDeleted]) 
 VALUES
 ('n1claren', 'NotMyRealPassword123', 'randompicturelink.com/image.jpg', '2021-09-16', 0),
 ('kalz3hardy', 'NotHisRealPassword123', 'randompicturelink.com/image.jpg', '2021-09-14', 0),
