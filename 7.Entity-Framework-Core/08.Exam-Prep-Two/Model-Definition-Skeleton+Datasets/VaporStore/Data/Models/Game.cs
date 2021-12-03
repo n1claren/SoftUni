@@ -36,9 +36,9 @@ namespace VaporStore.Data.Models
         [Required]
         public Genre Genre { get; set; }
 
-        public IEnumerable<Purchase> Purchases { get; set; }
+        public ICollection<Purchase> Purchases { get; set; }
 
         [MinLength(1)]
-        public IEnumerable<GameTag> GameTags { get; set; }
+        public ICollection<GameTag> GameTags { get; set; }
     }
 }

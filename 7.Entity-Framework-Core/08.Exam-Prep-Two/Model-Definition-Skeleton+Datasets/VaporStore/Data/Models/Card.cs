@@ -34,6 +34,6 @@ namespace VaporStore.Data.Models
         [Required]
         public User User { get; set; }
 
-        public IEnumerable<Purchase> Purchases { get; set; }
+        public ICollection<Purchase> Purchases { get; set; }
     }
 }

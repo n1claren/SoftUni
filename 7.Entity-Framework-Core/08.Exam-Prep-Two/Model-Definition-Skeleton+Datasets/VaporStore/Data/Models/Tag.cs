@@ -16,6 +16,6 @@ namespace VaporStore.Data.Models
         [Required]
         public string Name { get; set; }
 
-        public IEnumerable<GameTag> GameTags { get; set; }
+        public ICollection<GameTag> GameTags { get; set; }
     }
 }

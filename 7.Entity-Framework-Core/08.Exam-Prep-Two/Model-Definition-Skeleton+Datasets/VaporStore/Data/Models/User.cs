@@ -27,6 +27,6 @@ namespace VaporStore.Data.Models
         [Range(3, 103)]
         public int Age { get; set; }
 
-        public IEnumerable<Card> Cards { get; set; }
+        public ICollection<Card> Cards { get; set; }
     }
 }
