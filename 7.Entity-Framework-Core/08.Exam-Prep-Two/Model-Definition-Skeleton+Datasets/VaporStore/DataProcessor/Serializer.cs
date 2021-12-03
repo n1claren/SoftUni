@@ -4,6 +4,10 @@
 	using Data;
 	using System.Linq;
     using Newtonsoft.Json;
+    using System.Text;
+    using VaporStore.DataProcessor.Dto.Export;
+    using VaporStore.Data.Models.Enums;
+    using System.Globalization;
 
     public static class Serializer
 	{
@@ -43,7 +47,47 @@
 
 		public static string ExportUserPurchasesByType(VaporStoreDbContext context, string storeType)
 		{
-			
+            var purchaseType = Enum.Parse<PurchaseType>(storeType);
+
+            var users = context.Users
+                .Where(u => u.Cards.Any(c => c.Purchases.Count > 0))
+                .ToList()
+                .Select(u => new UserOutputModel()
+                {
+                    Username = u.Username,
+                    Purchases = context
+                                    .Purchases
+                                    .Where(p => p.Card.User.Username == u.Username && p.Type == purchaseType)
+                                    .OrderBy(p => p.Date)
+                                    .ToList()
+                    .Select(p => new PurchaseOutputModel()
+                    {
+                        Card = p.Card.Number,
+                        Cvc = p.Card.Cvc,
+                        Date = p.Date.ToString("yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture),
+                        Game = new GameOutputModel()
+                        {
+                            Title = p.Game.Name,
+                            Genre = p.Game.Genre.Name,
+                            Price = p.Game.Price
+                        }
+                    })
+                    .ToList(),
+                    TotalSpent = context
+                                .Purchases
+                                .Where(p => p.Card.User.Username == u.Username &&
+                                p.Type == purchaseType)
+                    .ToList()
+                    .Sum(p => p.Game.Price)
+                })
+                .Where(u => u.Purchases.Count > 0)
+                .OrderByDescending(u => u.TotalSpent)
+                .ThenBy(u => u.Username)
+                .ToList();
+
+            var result = XMLConverter.Serialize(users, "Users");
+
+            return result;
 		}
 	}
 }
