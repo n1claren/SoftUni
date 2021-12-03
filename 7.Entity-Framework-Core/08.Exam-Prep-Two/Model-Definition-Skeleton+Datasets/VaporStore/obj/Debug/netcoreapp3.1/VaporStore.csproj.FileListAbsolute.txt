@@ -1,0 +1,5 @@
+C:\Users\niclaren\Desktop\GitHub\SoftUni\7.Entity-Framework-Core\08.Exam-Prep-Two\Model-Definition-Skeleton+Datasets\VaporStore\obj\Debug\netcoreapp3.1\VaporStore.csproj.AssemblyReference.cache
+C:\Users\niclaren\Desktop\GitHub\SoftUni\7.Entity-Framework-Core\08.Exam-Prep-Two\Model-Definition-Skeleton+Datasets\VaporStore\obj\Debug\netcoreapp3.1\VaporStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\niclaren\Desktop\GitHub\SoftUni\7.Entity-Framework-Core\08.Exam-Prep-Two\Model-Definition-Skeleton+Datasets\VaporStore\obj\Debug\netcoreapp3.1\VaporStore.AssemblyInfoInputs.cache
+C:\Users\niclaren\Desktop\GitHub\SoftUni\7.Entity-Framework-Core\08.Exam-Prep-Two\Model-Definition-Skeleton+Datasets\VaporStore\obj\Debug\netcoreapp3.1\VaporStore.AssemblyInfo.cs
+C:\Users\niclaren\Desktop\GitHub\SoftUni\7.Entity-Framework-Core\08.Exam-Prep-Two\Model-Definition-Skeleton+Datasets\VaporStore\obj\Debug\netcoreapp3.1\VaporStore.csproj.CoreCompileInputs.cache
