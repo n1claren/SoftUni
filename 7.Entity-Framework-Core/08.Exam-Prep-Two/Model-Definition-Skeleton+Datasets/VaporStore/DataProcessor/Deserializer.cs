@@ -187,7 +187,50 @@
 
 		public static string ImportPurchases(VaporStoreDbContext context, string xmlString)
 		{
-			throw new NotImplementedException();
+			var sb = new StringBuilder();
+
+			var purchases = new List<Purchase>();
+
+			var importPurchases = XMLConverter.Deserializer<PurchaseInputModel>(xmlString, "Purchases");
+
+            foreach (var importPurchase in importPurchases)
+            {
+				bool isDateValid = DateTime.TryParseExact(importPurchase.Date, "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime validDate);
+
+				bool isValidPurchase = Enum.TryParse(typeof(PurchaseType), importPurchase.Type, out var validPurchase);
+
+				var card = context.Cards.FirstOrDefault(c => c.Number == importPurchase.Card);
+
+				var game = context.Games.FirstOrDefault(g => g.Name == importPurchase.Game);
+
+				if (!IsValid(importPurchase) || 
+					isDateValid == false || 
+					isValidPurchase == false ||
+					card == null ||
+					game == null)
+                {
+					sb.AppendLine(ERROR_MESSAGE);
+					continue;
+				}
+
+				var currentPurchase = new Purchase
+				{
+					Game = game,
+					Type = (PurchaseType)validPurchase,
+					ProductKey = importPurchase.ProductKey,
+					Card = card,
+					Date = validDate
+				};
+
+				purchases.Add(currentPurchase);
+
+				sb.AppendLine($"Imported {currentPurchase.Game.Name} for {currentPurchase.Card.User.Username}");
+            }
+
+			context.Purchases.AddRange(purchases);
+			context.SaveChanges();
+
+			return sb.ToString().Trim();
 		}
 
 		private static bool IsValid(object dto)
