@@ -9,6 +9,7 @@
     using Data;
     using Newtonsoft.Json;
     using VaporStore.Data.Models;
+    using VaporStore.Data.Models.Enums;
     using VaporStore.DataProcessor.Dto.Import;
 
     public static class Deserializer
@@ -121,7 +122,67 @@
 
 		public static string ImportUsers(VaporStoreDbContext context, string jsonString)
 		{
-			throw new NotImplementedException();
+			var sb = new StringBuilder();
+
+			var users = new List<User>();
+
+			var importUsers = JsonConvert.DeserializeObject<IEnumerable<UserInputModel>>(jsonString);
+
+			foreach (var importUser in importUsers)
+			{
+				if (!IsValid(importUser) || importUser.Cards.Count() == 0)
+				{
+					sb.AppendLine(ERROR_MESSAGE);
+					continue;
+				}
+
+				bool cardsValid = true;
+				var cards = new List<Card>();
+
+				foreach (var card in importUser.Cards)
+				{
+					bool validCardType = Enum.TryParse(typeof(CardType), card.Type, out var cardType);
+
+					if (!IsValid(card) || validCardType == false)
+					{
+						cardsValid = false;
+						break;
+					}
+
+					var currentCard = new Card
+					{
+						Number = card.Number,
+						Cvc = card.CVC,
+						Type = (CardType)cardType
+					};
+
+					cards.Add(currentCard);
+				}
+
+				if (cardsValid == false)
+                {
+					sb.AppendLine(ERROR_MESSAGE);
+					continue;
+				}
+
+				var currentUser = new User
+				{
+					FullName = importUser.FullName,
+					Username = importUser.Username,
+					Email = importUser.Email,
+					Age = importUser.Age,
+					Cards = cards
+				};
+
+				users.Add(currentUser);
+
+				sb.AppendLine($"Imported {currentUser.Username} with {currentUser.Cards.Count()} cards");
+            }
+
+			context.Users.AddRange(users);
+			context.SaveChanges();
+
+			return sb.ToString().TrimEnd();
 		}
 
 		public static string ImportPurchases(VaporStoreDbContext context, string xmlString)
