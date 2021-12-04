@@ -116,50 +116,41 @@
 
             var theatres = new List<Theatre>();
 
-            var tTicketsImport = JsonConvert.DeserializeObject<IEnumerable<TheatreInputModel>>(jsonString);
+            var importTT = JsonConvert.DeserializeObject<List<TheatreInputModel>>(jsonString);
 
-            foreach (var tTicketImport in tTicketsImport)
+            foreach (var theatreImport in importTT)
             {
-                if (!IsValid(tTicketImport))
+                if (!IsValid(theatreImport))
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
 
-                bool ticketsValid = true;
-                var tickets = new List<Ticket>();
-
-                foreach (var currentTicket in tTicketImport.Tickets)
+                var theatre = new Theatre()
                 {
-                    if (!IsValid(currentTicket))
+                    Name = theatreImport.Name,
+                    Director = theatreImport.Director,
+                    NumberOfHalls = theatreImport.NumberOfHalls,
+                    Tickets = new List<Ticket>()
+                };
+
+                foreach (var ticket in theatreImport.Tickets)
+                {
+                    if (!IsValid(ticket))
                     {
                         sb.AppendLine(ErrorMessage);
                         continue;
                     }
 
-                    var ticket = new Ticket
+                    theatre.Tickets.Add(new Ticket()
                     {
-                        Price = currentTicket.Price,
-                        RowNumber = currentTicket.RowNumber,
-                        PlayId = currentTicket.PlayId
-                    };
-
-                    tickets.Add(ticket);
+                        Price = ticket.Price,
+                        RowNumber = ticket.RowNumber,
+                        PlayId = ticket.PlayId,
+                        TheatreId = theatre.Id,
+                        Theatre = theatre
+                    });
                 }
-
-                if (ticketsValid == false)
-                {
-                    sb.AppendLine(ErrorMessage);
-                    continue;
-                }
-
-                var theatre = new Theatre
-                {
-                    Name = tTicketImport.Name,
-                    NumberOfHalls = tTicketImport.NumberOfHalls,
-                    Director = tTicketImport.Director,
-                    Tickets = tickets
-                };
 
                 theatres.Add(theatre);
 
@@ -171,7 +162,6 @@
 
             return sb.ToString().TrimEnd();
         }
-
 
         private static bool IsValid(object obj)
         {
