@@ -10,3 +10,15 @@ C:\Users\niclaren\source\repos\BasicWebServer\BasicWebServer.Server\obj\Debug\ne
 C:\Users\niclaren\source\repos\BasicWebServer\BasicWebServer.Server\obj\Debug\net6.0\BasicWebServer.Server.dll
 C:\Users\niclaren\source\repos\BasicWebServer\BasicWebServer.Server\obj\Debug\net6.0\ref\BasicWebServer.Server.dll
 C:\Users\niclaren\source\repos\BasicWebServer\BasicWebServer.Server\obj\Debug\net6.0\BasicWebServer.Server.pdb
+C:\Users\niclaren\Desktop\GitHub\SoftUni\8.C#-Web-Basics\01.Web-Server-HTTP-Protocol\BasicWebServer\BasicWebServer.Server\bin\Debug\net6.0\BasicWebServer.Server.deps.json
+C:\Users\niclaren\Desktop\GitHub\SoftUni\8.C#-Web-Basics\01.Web-Server-HTTP-Protocol\BasicWebServer\BasicWebServer.Server\bin\Debug\net6.0\BasicWebServer.Server.dll
+C:\Users\niclaren\Desktop\GitHub\SoftUni\8.C#-Web-Basics\01.Web-Server-HTTP-Protocol\BasicWebServer\BasicWebServer.Server\bin\Debug\net6.0\ref\BasicWebServer.Server.dll
+C:\Users\niclaren\Desktop\GitHub\SoftUni\8.C#-Web-Basics\01.Web-Server-HTTP-Protocol\BasicWebServer\BasicWebServer.Server\bin\Debug\net6.0\BasicWebServer.Server.pdb
+C:\Users\niclaren\Desktop\GitHub\SoftUni\8.C#-Web-Basics\01.Web-Server-HTTP-Protocol\BasicWebServer\BasicWebServer.Server\obj\Debug\net6.0\BasicWebServer.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\niclaren\Desktop\GitHub\SoftUni\8.C#-Web-Basics\01.Web-Server-HTTP-Protocol\BasicWebServer\BasicWebServer.Server\obj\Debug\net6.0\BasicWebServer.Server.AssemblyInfoInputs.cache
+C:\Users\niclaren\Desktop\GitHub\SoftUni\8.C#-Web-Basics\01.Web-Server-HTTP-Protocol\BasicWebServer\BasicWebServer.Server\obj\Debug\net6.0\BasicWebServer.Server.AssemblyInfo.cs
+C:\Users\niclaren\Desktop\GitHub\SoftUni\8.C#-Web-Basics\01.Web-Server-HTTP-Protocol\BasicWebServer\BasicWebServer.Server\obj\Debug\net6.0\BasicWebServer.Server.csproj.CoreCompileInputs.cache
+C:\Users\niclaren\Desktop\GitHub\SoftUni\8.C#-Web-Basics\01.Web-Server-HTTP-Protocol\BasicWebServer\BasicWebServer.Server\obj\Debug\net6.0\BasicWebServer.Server.dll
+C:\Users\niclaren\Desktop\GitHub\SoftUni\8.C#-Web-Basics\01.Web-Server-HTTP-Protocol\BasicWebServer\BasicWebServer.Server\obj\Debug\net6.0\ref\BasicWebServer.Server.dll
+C:\Users\niclaren\Desktop\GitHub\SoftUni\8.C#-Web-Basics\01.Web-Server-HTTP-Protocol\BasicWebServer\BasicWebServer.Server\obj\Debug\net6.0\BasicWebServer.Server.pdb
+C:\Users\niclaren\Desktop\GitHub\SoftUni\8.C#-Web-Basics\01.Web-Server-HTTP-Protocol\BasicWebServer\BasicWebServer.Server\obj\Debug\net6.0\BasicWebServer.Server.csproj.AssemblyReference.cache

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zf9WXdhcZEXqCI0u3GvMNjrde3tBPB/lkgeOhTPvka+M6T7eFRzT/iCBtnh03ICZdYwSnLzFxhS5fV7qRS0aiQ==",
+  "dgSpecHash": "0yB0gED9xdu3aKrGTnwMqjgXOfCHbsUJjSOz3uUG4vJ+QXfVOv/0GXdKkTk+q3UQxNf3nAjf/oPWnJag1myt6Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\niclaren\\source\\repos\\BasicWebServer\\BasicWebServer.Server\\BasicWebServer.Server.csproj",
+  "projectFilePath": "C:\\Users\\niclaren\\Desktop\\GitHub\\SoftUni\\8.C#-Web-Basics\\01.Web-Server-HTTP-Protocol\\BasicWebServer\\BasicWebServer.Server\\BasicWebServer.Server.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
