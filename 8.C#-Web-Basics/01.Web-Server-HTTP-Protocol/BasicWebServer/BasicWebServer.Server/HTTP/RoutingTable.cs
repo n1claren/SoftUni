@@ -11,17 +11,17 @@ namespace BasicWebServer.Server.HTTP
         public RoutingTable()
             => this.routes = new Dictionary<Method, Dictionary<string, Response>>()
             {
-                [Method.Get] = new Dictionary<string, Response>(),
-                [Method.Post] = new Dictionary<string, Response>(),
-                [Method.Put] = new Dictionary<string, Response>(),
-                [Method.Delete] = new Dictionary<string, Response>()
+                [Method.GET] = new Dictionary<string, Response>(),
+                [Method.POST] = new Dictionary<string, Response>(),
+                [Method.PUT] = new Dictionary<string, Response>(),
+                [Method.DELETE] = new Dictionary<string, Response>()
             };
 
         public IRoutingTable Map(string url, Method method, Response response)
             => method switch
             {
-                Method.Get => this.MapGet(url, response),
-                Method.Post => this.MapPost(url, response),
+                Method.GET => this.MapGet(url, response),
+                Method.POST => this.MapPost(url, response),
                 _ => throw new InvalidOperationException($"Method '{method} is not supported.'")
             };
 
@@ -30,7 +30,7 @@ namespace BasicWebServer.Server.HTTP
             Guard.AgainstNull(url, nameof(url));
             Guard.AgainstNull(response, nameof(response));
 
-            this.routes[Method.Get][url] = response;
+            this.routes[Method.GET][url] = response;
 
             return this;
         }
@@ -40,7 +40,7 @@ namespace BasicWebServer.Server.HTTP
             Guard.AgainstNull(url, nameof(url));
             Guard.AgainstNull(response, nameof(response));
 
-            this.routes[Method.Post][url] = response;
+            this.routes[Method.POST][url] = response;
 
             return this;
         }

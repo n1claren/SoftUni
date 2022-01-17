@@ -18,8 +18,8 @@
 
             var url = firstLine[1];
 
-            Method method = ParseMethod(firstLine[2]);
-
+            Method method = ParseMethod(firstLine[0]);
+                
             HeaderCollection headers = ParseHeaders(lines.Skip(1));
 
             var bodyLines = lines.Skip(headers.Count + 2);
@@ -46,14 +46,14 @@
                     break;
                 }
 
-                var parts = line.Split(":");
+                var parts = line.Split(": ");
 
                 if (parts.Length != 2)
                 {
                     throw new InvalidOperationException("Request headers invalid");
                 }
 
-                headers.Add(parts[0], parts[1].Trim());
+                headers.Add(parts[0], parts[1]);
             }
 
             return headers;
