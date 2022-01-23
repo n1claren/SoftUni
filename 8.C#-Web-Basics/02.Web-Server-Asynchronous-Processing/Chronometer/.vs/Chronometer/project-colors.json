@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3cc4d7aa-ce68-4343-9e44-756772818bba": {
+      "ProjectGuid": "3cc4d7aa-ce68-4343-9e44-756772818bba",
+      "DisplayName": "Chronometer",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
