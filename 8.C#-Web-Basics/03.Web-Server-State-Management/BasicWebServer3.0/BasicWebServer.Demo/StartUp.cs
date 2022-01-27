@@ -32,7 +32,8 @@ namespace BasicWebServer.Demo
                  .MapPost("/HTML", new TextResponse("", AddFormDataAction))
                  .MapGet("/Content", new HtmlResponse(DownloadForm))
                  .MapPost("/Content", new TextFileResponse(FileName))
-                 .MapGet("/Cookies", new HtmlResponse("", AddCookieAction)));
+                 .MapGet("/Cookies", new HtmlResponse("", AddCookieAction))
+                 .MapGet("/Session", new TextResponse("", DisplaySessionInformation)));
 
             await server.Start();
         }
@@ -50,7 +51,7 @@ namespace BasicWebServer.Demo
 
         private static void AddCookieAction(Request request, Response response)
         {
-            var requestHasCookies = request.Cookies.Any();
+            var requestHasCookies = request.Cookies.Any(c => c.Name != Session.SessionCookieName);
 
             var bodyText = "";
 
@@ -98,6 +99,26 @@ namespace BasicWebServer.Demo
 
                 return html.Substring(0, 2000);
             }
+        }
+
+        private static void DisplaySessionInformation(Request request, Response response)
+        {
+            var sessionsExists = request.Session.ContainsKey(Session.SessionCurrentDateKey);
+
+            var bodyText = "";
+
+            if (sessionsExists)
+            {
+                var currentDate = request.Session[Session.SessionCurrentDateKey];
+                bodyText = $"Stored date: {currentDate}!";
+            }
+            else
+            {
+                bodyText = "Current date stored!";
+            }
+
+            response.Body = "";
+            response.Body += bodyText;
         }
 
         private static async Task DownloadSitesAsTextFiles(string fileName, string[] urls)
