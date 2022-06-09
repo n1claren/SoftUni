@@ -1,0 +1,22 @@
+body {
+    padding: 40px;
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    border-bottom: solid 2px black;
+}
+
+h1 {
+    display: inline-block;
+    padding-right: 40px;
+}
+
+nav {
+    display: inline-block;
+}
+
+a {
+    padding: 30px;
+    color: green;
+}
