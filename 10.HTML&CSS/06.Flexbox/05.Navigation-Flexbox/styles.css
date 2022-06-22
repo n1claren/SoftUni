@@ -1,0 +1,40 @@
+body {
+    padding: 20px 60px;
+}
+
+header {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+header ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 20px;
+}
+
+header ul li a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
+header h1 {
+    display: flex;
+    justify-content: start;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 50%;
+}
+
+header nav {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}

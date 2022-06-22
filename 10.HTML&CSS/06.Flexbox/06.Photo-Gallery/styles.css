@@ -1,0 +1,16 @@
+body, ul, li {
+    display: flex;
+}
+
+.gallery ul {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery ul li {
+    padding: 30px 15px;
+    margin-bottom: 50px;
+    align-items: center;
+    border: 7px solid black;
+    background-color: white;
+}

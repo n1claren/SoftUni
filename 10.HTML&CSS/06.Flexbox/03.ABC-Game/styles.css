@@ -1,0 +1,65 @@
+* {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    max-width: 15vw;
+    height: 35rem;
+    flex-direction: column;
+}
+
+span {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.container .element:nth-child(1) {
+    order: 9;
+}
+
+.container .element:nth-child(2) {
+    order: 2;
+}
+
+.container .element:nth-child(3) {
+    order: 10;
+}
+
+.container .element:nth-child(4) {
+    order: 4;
+}
+
+.container .element:nth-child(5) {
+    order: 8;
+}
+
+.container .element:nth-child(6) {
+    order: 7;
+}
+
+.container .element:nth-child(7) {
+    order: 11;
+}
+
+.container .element:nth-child(8) {
+    order: 5;
+}
+
+.container .element:nth-child(9) {
+    order: 6;
+}
+
+.container .element:nth-child(10) {
+    order: 12;
+}
+
+.container .element:nth-child(11) {
+    order: 1;
+}
+
+.container .element:nth-child(12) {
+    order: 3;
+}

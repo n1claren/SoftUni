@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(238, 238, 238);
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+img {
+    background-color: rgb(255, 255, 255);
+}
+
+h1, h2, blockquote {
+    font-family: Georgia, serif;
+}
+
+div.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+
+aside {
+    margin-left: 90%;
+    box-sizing: border-box;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+}
