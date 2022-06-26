@@ -1,0 +1,175 @@
+@import url('https://use.fontawesome.com/releases/v6.1.1/css/all.css');
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 50px;
+    background-color: black;
+}
+
+.header h1 {
+    color: white;
+    font-size: 44px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header p {
+    color: white;
+    font-size: 30px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header .buyNow {
+    background-color: #15c48c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.articles .article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article .info {
+    width: 50%;
+}
+
+.article .image {
+    width: 50%;
+}
+
+.article .image img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+.article:nth-child(1) .info h2 {
+    font-size: 42px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+.article:nth-child(1) .info p {
+    font-size: 28px;
+    width: 70%;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.article:nth-child(1) .info ul {
+    font-size: 18px;
+    width: 70%;
+    margin-left: 10px;
+    list-style: none;
+}
+
+.article:nth-child(1) .info ul li {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.article:nth-child(1) .info ul li i {
+    padding: 3px;
+    background-color: #15c48c;
+    border-radius: 100px;
+    color: white;
+    margin-right: 30px;
+}
+
+.article:nth-child(2) p {
+    font-size: 28px;
+}
+
+.article:nth-child(2) .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.article:nth-child(2) .info h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.article:nth-child(2) .info p {
+    color: #42b174;
+}
+
+.article:nth-child(2) .info section {
+    display: flex;
+}
+
+.article:nth-child(2) .info .first-row article {
+    width: 33%;
+}
+
+.article:nth-child(2) .info .second-row article {
+    width: 33%;
+}
+
+.article:nth-child(2) .info .first-row article img {
+    width: 50px;
+}
+
+.article:nth-child(2) .info .second-row article img {
+    width: 50px;
+}
+
+
+
+footer {
+    background-color: #50cea6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer section {
+    display: flex;
+}
+
+footer section article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin: 0 auto;
+}
+
+footer section article p {
+    width: 75%;
+    margin: 0 auto;
+}
+
+footer .email-us a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}

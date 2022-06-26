@@ -1,0 +1,24 @@
+@media all and (max-width: 600px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    main .left-to-right article {
+        border-radius: 20%;
+    }
+
+    main .left-to-right article button {
+        display: none;
+    }
+
+    main section:nth-child(2),
+    main section:nth-child(4) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section:nth-child(2) button {
+        display: none;
+    }
+}
